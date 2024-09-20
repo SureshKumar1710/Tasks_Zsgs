@@ -1,0 +1,27 @@
+public class Pattern4 
+{
+    public static void main(String[] args) 
+    {
+	int n=5;
+	pattern4(n);
+    }
+    public static void pattern4(int n)
+    {
+    	int t=n;
+    	for(int row=1;row<=n;row++)
+    	{
+    	    for(int col=1;col<2*n;col++)
+    	    {
+    		if(col>=row && col<=2*n-row)
+    		{
+    		    System.out.print(t+" ");
+    		    col++;
+    		}
+    		else
+    		    System.out.print(" ");
+    	    }
+    	    t--;
+    	    System.out.println();
+    	}
+    }
+}

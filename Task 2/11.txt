@@ -1,0 +1,26 @@
+import java.util.*;
+public class numAlpha 
+{
+    public static void main(String[] args) 
+    {
+	Scanner sc=new Scanner(System.in);
+	String s=sc.next(),res="";
+	char c;
+	int n=0;
+	for(int i=0;i<s.length();i++)
+	{
+	    c=s.charAt(i);
+	    i++;
+	    if(i+1<s.length() && Character.isDigit(s.charAt(i+1)))
+	    {
+		n=Integer.parseInt(s.substring(i,i+2));
+		i++;
+	    }
+	    else
+		n=Integer.parseInt(s.substring(i,i+1));
+	    for(int j=0;j<n;j++)
+		res+=c;
+	}
+	System.out.println(res);
+    }
+}

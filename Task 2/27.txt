@@ -1,0 +1,17 @@
+public class IsSubstring 
+{
+    public static void main(String[] args) 
+    {
+	String s1="test12test",s2="123";
+	int l1=s1.length(),l2=s2.length();
+	for(int i=0;i-1<l1-l2;i++)
+	{
+	    if(s1.substring(i,i+l2).equals(s2))
+	    {
+		System.out.println(i);
+		return;
+	    }
+	}
+	System.out.println(-1);
+    }
+}

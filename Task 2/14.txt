@@ -1,0 +1,13 @@
+public class CopyArr 
+{
+    public static void main(String[] args) 
+    {
+    	int[] arr= {7,1,5,19,12,6,3,8};
+	if(arr.length<1) return;
+	int[] res=new int[arr.length];
+	for(int i=0;i<arr.length;i++)
+	    res[i]=arr[i];
+	for(int i=0;i<res.length;i++)
+	    System.out.print(res[i]+" ");
+    }
+}

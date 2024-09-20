@@ -1,0 +1,22 @@
+\\bitwise
+public class bitwise 
+{
+    public static void main(String[] args) 
+    {
+	int n1=8,n2=9,res=0;
+	res=n1&n2;
+	System.out.println("AND: "+res);
+	res=n1|n2;
+	System.out.println("OR: "+res);
+	res=~n1;
+	System.out.println("NOT: "+res);
+	res=n1^n2;
+	System.out.println("EX-OR "+res);
+	res=n1<<1;
+	System.out.println("LEFT-SHIFT: "+res);
+	res=n1>>1;
+	System.out.println("RIGHT-SHIFT: "+res);
+	res=n1>>>1;
+	System.out.println("UNSIGNED RIGHT: "+res);	
+    }
+}

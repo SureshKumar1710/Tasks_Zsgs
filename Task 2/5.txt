@@ -1,0 +1,27 @@
+public class Polynomial 
+{
+    public static void main(String[] args) 
+    {
+	int a=2, b=5,c=2;
+	double t=b*b-(4*a*c);
+	if(t>0)
+	{
+	    double res1= (-b+Math.sqrt(t))/(2*a);
+	    double res2= (-b-Math.sqrt(t))/(2*a);
+	    System.out.println(res1 +" "+ res2);
+	}
+	else if(t==0)
+	{
+	    double res=-b/(2*a);
+	    System.out.println(res);
+	}
+	else
+	{
+	    double res1=-b/(2*a);
+	    double res2=Math.sqrt(-t)/(2*a);
+	    System.out.printf("%.1f+%.1fi",res1,res2);
+	    System.out.println();
+	    System.out.printf("%.1f-%.1fi",res1,res2);
+	}
+    }
+}

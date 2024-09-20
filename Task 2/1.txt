@@ -1,0 +1,15 @@
+//tillChar
+import java.util.*;
+public class tillChar 
+{
+    public static void main(String[] args) 
+    {
+	Scanner sc=new Scanner(System.in);
+	char c=sc.next().charAt(0);
+	for(int i=c;i<'A'+26;i++)
+	{
+		System.out.print(c);
+		c=(char) (c+1);
+	}
+    }
+}

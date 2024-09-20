@@ -1,0 +1,42 @@
+import java.util.*;
+public class DiagMat 
+{
+    public static void main(String[] args) 
+    {
+    	ArrayList<ArrayList<Integer>> res=new ArrayList<>();
+    	Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[][] mat=new int[n][n];
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				mat[i][j]=sc.nextInt();
+			}
+		}
+		for(int i=0;i<n;i++) 
+		{
+            ArrayList<Integer> temp=new ArrayList<>();
+            int r=0,c= i;
+            while (r<n && c>=0) 
+            {
+                temp.add(mat[r][c]);
+                r++;
+                c--;
+            }
+            res.add(temp);
+        }
+		for (int i=1;i<n;i++) 
+		{
+            ArrayList<Integer> temp = new ArrayList<>();
+            int r=i,c=n-1;
+            while(r<n && c>=0) {
+                temp.add(mat[r][c]);
+                r++;
+                c--;
+            }
+            res.add(temp);
+        }
+		System.out.println(res);
+	}
+}
